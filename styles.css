@@ -94,3 +94,18 @@ header p{
     grid-row: 3/5;
     border-top: solid var(--color-orange);
 }
+
+@media screen and (max-width:840px){
+    header{
+        margin:0 auto;
+        width:90%;
+        padding: 2rem;
+        font-size: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+}
