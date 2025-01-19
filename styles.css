@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", serif;
+    background: var(--color-ligthgray);
+    font-family:"Poppins", serif;
+    width: 100%;
+    height: 100vh;
+    max-width: 1440px;
+    font-size: 15px;
+}
+:root{
+    --color-red:hsl(0,78%,62%);
+    --color-cyan:hsl(180,62%,55%);
+    --color-orange:hsl(34,97%,64%);
+    --color-blue:hsl(212,86%,64%);
+    --color-darkblue:hsl(234,12%,34%);
+    --color-grayishblue:hsl(229,6%,66%);
+    --color-ligthgray:hsl(0,0%,98%);
+}
+
+header{
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0 3rem 0;
+}
+.head-title{
+    font-weight: 500;
+    color: var(--color-grayishblue);
+}
+.head-titleb{
+    font-weight: 500;
+}
+
+header p{
+    color: var(--color-grayishblue);
+    font-weight: 300;
+}
+.container{
+    width: 66%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 3rem;
+    
+}
+.container section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow:2px 8px 3px 3px rgba(196, 195, 195, 0.7);
+}
+.container section p{
+    color: var(--color-grayishblue);
+    font-size: 13px;
+    padding-top: 1em;
+}
+.container img{
+    width:3rem;
+}
+.container .image{
+    display: flex;
+    justify-content:flex-end;
+    margin-top:3em;
+}
+
+.container .one{
+    grid-column: 1;
+    grid-row: 2/4;
+    border-top: solid var(--color-cyan);
+}
+.container .two{
+    grid-column: 2;
+    grid-row: 1/3;
+    border-top: solid var(--color-red);
+}
+.container .three{
+    grid-column: 3;
+    grid-row: 2/4;
+    border-top: solid var(--color-blue);
+}
+.container .four{
+    grid-column: 2;
+    grid-row: 3/5;
+    border-top: solid var(--color-orange);
+}
